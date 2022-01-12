@@ -52,7 +52,7 @@
 
 .article{
     background-color: rgb(255, 255, 255);
-    height: 500px;
+    height: autopx;
     width:60%;
     margin:3%;
     display: flex;
@@ -208,7 +208,8 @@ p{
 
     .article{
         background-color: rgb(255, 255, 255);
-        height: 600px;
+        height: auto;
+        padding-bottom: 30px;
         width:80%;
         margin:3%;
         display: flex;
