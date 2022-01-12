@@ -11,9 +11,20 @@
     margin: 0px;
 }
 .container{
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     height: 400px;
     display: flex;
+    margin-bottom: 30px;
+}
+
+.container2{
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    display: flex;
+    margin-bottom: 5%px;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
 }
 
 .box{
@@ -39,13 +50,83 @@
     text-align: center;
 }
 
+.article{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width:60%;
+    margin:3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+}
+
+.article img{
+    height: 70%;
+    width:100%;
+    object-fit: cover;
+}
+
+.textbox{
+    height: 30%;
+    width:90%;
+    margin-top: 10px;
+    justify-content: top;
+    align-items: center;
+    text-align: left;
+}
+
+.dept{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:red;
+    margin-left:-10px;
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight:700;
+    font-size: 25px;
+    color:black;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.content{
+    margin-bottom:10px;
+}
+
+.author{
+    text-transform: capitalize;
+    font-size: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    color:black;
+    display: inline;
+}
+
+.date{
+    text-transform: capitalize;
+    font-size: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    color:black;
+    margin-left:20px;
+    display: inline;
+}
+
 .byline{
     color: white;
     margin-bottom: 20%;
 } 
 
 .sectionhead{
-    color: rgb(141, 141, 141);
+    color: rgb(255, 255, 255);
     
 }
 
@@ -57,45 +138,97 @@ h1{
 }
 
 h2{
-    font-style: italic;
-    font-weight: 100;
-    color: rgba(255, 255, 255, 0.616);
+    font-size: 18px;
+    font-weight: 10;
+    color: rgb(255, 255, 255);
     margin-left: 15%;
     margin-right: 15%;
 }
 
 h3{
     font-size: 18px;
-    font-style: italic;
-    font-weight: 100;
-    color: rgba(255, 255, 255, 0.616);
+    font-weight: 50;
+    color: rgb(255, 255, 255);
     margin-left: 15%;
     margin-right: 15%;
 }
 
+p{
+    font-size: 15px;
+}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+    body{
+        margin:0;
+        height: 100%;
+    }
+
     .container{
-        background-color: antiquewhite;
-        height: 400px;
+        background-color: rgb(255, 255, 255);
+        height: 650px;
         display: flex;
         flex-direction: column;
+    }
+
+    .container2{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        margin-bottom: 5%px;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .box{
         background-color: rgb(0, 0, 0);
         height: 400px;
-        width:50%;
+        width:100%;
+ 
+    }
+
+    .box img{
+        height: 100%;
+        width:100%;
+        object-fit: cover;
     }
 
     .boxinfo{
         background-color: rgb(0, 0, 0);
-        height: 400px;
+        height: 500px;
         width:100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .article{
+        background-color: rgb(255, 255, 255);
+        height: 600px;
+        width:80%;
+        margin:3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .article img{
+        height: 60%;
+        width:100%;
+        object-fit: cover;
+    }
+    
+    .textbox{
+        height: 30%;
+        width:90%;
+        margin-top: 10px;
+        justify-content: top;
+        align-items: center;
+        text-align: left;
     }
 }
